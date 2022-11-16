@@ -5,18 +5,21 @@ pipeline {
             steps {
                 echo 'Dev' 
             }
-          stage('Test') {
+        stage('Test') {
             steps {
                 echo 'Test' 
             }
-            stage('UAT') {
+        stage('UAT') {
             steps {
                 echo 'UAT' 
             }
-              stage('PROD') {
+        stage('PROD') {
             steps {
                 echo 'PROD' 
             }
-        }
+            }
+          }
+         }
+       }
     }
 }
